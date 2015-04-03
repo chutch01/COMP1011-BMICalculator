@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BMILayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.example.bmicalculator.MainActivity" >
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight (kg)" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input Weight"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height(m)" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input Height"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/unitsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imperial" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/BMICalcuationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculation:" />
+
+    <EditText
+        android:id="@+id/BMICalculationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number|numberDecimal"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/underweightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Underweight = &lt;18.5" />
+
+    <EditText
+        android:id="@+id/normalWeightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Normal weight = 18.5–24.9" />
+
+    <EditText
+        android:id="@+id/overWeightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Overweight = 25–29.9" />
+
+    <EditText
+        android:id="@+id/ObeisityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Obesity = BMI of 30 or greater" />
+
+</LinearLayout>
